@@ -1,0 +1,14 @@
+#centerImageView {
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+}
+
+#blurPane {
+    -fx-background-image: url("/image/cover/cover.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+#blurChild {
+     -fx-background-color: rgba(0, 0, 0, 0.22);
+}

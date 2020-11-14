@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane minWidth="1000.0" prefHeight="66.0" prefWidth="1000.0" style="-fx-background-color: rgba(240,240,240,0.82); -fx-border-color: rgba(127,127,127,0.82); -fx-border-width: 0.5, 0, 0, 0" stylesheets="/css/play_pane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jratil.controller.PlayController">
+
+    <HBox alignment="CENTER_LEFT" layoutX="54.0" layoutY="122.0" prefHeight="59.0" prefWidth="1000.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+                <Button id="lastOne" fx:id="lastOne" mnemonicParsing="false" HBox.hgrow="SOMETIMES" onAction="#playLastOne">
+                    <graphic>
+                        <ImageView fitHeight="15" fitWidth="15" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/image/play_bar/last_one.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Button id="playButton" fx:id="playButton" mnemonicParsing="false" onAction="#toggleState">
+                    <graphic>
+                        <ImageView fitHeight="16" fitWidth="16" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/image/play_bar/play.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Button id="nextOne" fx:id="nextOne" mnemonicParsing="false" onAction="#playNextOne">
+                    <graphic>
+                        <ImageView fitHeight="15" fitWidth="15" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/image/play_bar/next_one.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+            </HBox>
+            <Label id="startLabel" fx:id="startLabel" text="00:00">
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+            </Label>
+            <Slider id="slider" fx:id="slider" nodeOrientation="LEFT_TO_RIGHT" prefWidth="411.0">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+            </Slider>
+            <Label id="endLabel" fx:id="endLabel" text="00:00">
+                <HBox.margin>
+                    <Insets right="15.0" />
+                </HBox.margin>
+            </Label>
+            <Label id="soundLabel" fx:id="soundLabel">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="/image/play_bar/volum.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <HBox.margin>
+                    <Insets right="5.0" />
+                </HBox.margin>
+            </Label>
+            <Slider id="soundSlide" fx:id="soundSlider" prefHeight="24.0" prefWidth="80.0">
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </Slider>
+            <Button id="musicMenu" fx:id="musicMenu">
+                <graphic>
+                    <ImageView fitHeight="30" fitWidth="40" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="/image/play_bar/song_menu.png" />
+                        </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                    </ImageView>
+                </graphic>
+                <HBox.margin>
+                    <Insets right="15.0" />
+                </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </Button>
+        </children>
+    </HBox>
+
+
+</AnchorPane>

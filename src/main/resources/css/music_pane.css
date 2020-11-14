@@ -1,0 +1,24 @@
+#rootPane, #scrollPane, VBox {
+    -fx-background-color: rgba(240, 240, 240, 0.93);
+    -fx-border-width: 0.5 0.5 0 0 ;
+}
+
+#vbox {
+    -fx-background-color: #DB7093;
+}
+#vbox .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.titled-pane {
+    -fx-border-width: 0px;
+    -fx-background-color: rgba(240,240,240,0.82);
+}
+
+.list-view {
+    -fx-background-color: rgb(240, 240, 240);
+    -fx-border-width: 0.5 0.5 0 0 ;
+    -fx-border-color: rgba(127,127,127,0.82);;
+}

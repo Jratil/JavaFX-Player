@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="700" minWidth="1000" prefHeight="700.0" prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+<!--    <fx:include maxWidth="250.0" minHeight="630.0" minWidth="250.0" prefWidth="250.0" source="left_pane.fxml"-->
+<!--                AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0"/>-->
+<!--    <fx:include maxHeight="66.0" minHeight="70.0" minWidth="1000.0" source="play_pane.fxml"-->
+<!--                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>-->
+
+</AnchorPane>

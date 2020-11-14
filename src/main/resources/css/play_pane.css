@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: palevioletred;
+}
+
+#lastOne, #nextOne {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+#lastOne {
+    -fx-background-image: url("/image/play_bar/next_one.png");
+}
+
+#playButton {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 40px;
+    -fx-border-radius: 40px;
+}
+
+#musicMenu {
+    -fx-border-width: 0px;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}

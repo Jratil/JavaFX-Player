@@ -1,0 +1,30 @@
+#rootPane {
+    -fx-background-color: rgba(240, 240, 240, 0.82);
+    -fx-border-width: 0.5 0 0 0.5;
+    -fx-border-color: rgba(127, 127, 127, 0.82);;
+}
+
+#playListButton, #historyButton, #closeButton {
+
+    -fx-background-color: #ffffff;
+    -fx-text-fill: palevioletred;
+    -fx-font-weight: bold;
+}
+
+#closeButton {
+    -fx-background-radius: 40;
+}
+
+#header-h-box {
+    -fx-background-color: palevioletred;
+}
+
+#closeButton {
+    -fx-border-width: 0;
+}
+
+.list-view {
+    -fx-background-color: rgba(240, 240, 240, 0.82);
+    -fx-border-width: 0.5 0 0 0.5;
+    -fx-border-color: rgba(127, 127, 127, 0.82);;
+}
