@@ -4,11 +4,13 @@
 }
 
 #blurPane {
-    -fx-background-image: url("/image/cover/cover.jpg");
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
+    /*-fx-background-image: url("/image/cover/cover.jpg");*/
+    /*-fx-background-image: url("/image/backgroud.png");*/
+    /*-fx-background-repeat: stretch;*/
+    /*-fx-background-position: center center;*/
+    /*-fx-background-size: 100%, 100%;*/
 }
 
 #blurChild {
-     -fx-background-color: rgba(0, 0, 0, 0.22);
+     /*-fx-background-color: rgba(73, 73, 73, 0.13);*/
 }

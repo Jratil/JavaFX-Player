@@ -1,24 +1,29 @@
 #rootPane, #scrollPane, VBox {
-    -fx-background-color: rgba(240, 240, 240, 0.93);
+    -fx-background-color: rgba(255, 255, 255, 0.18);
     -fx-border-width: 0.5 0.5 0 0 ;
 }
 
 #vbox {
-    -fx-background-color: #DB7093;
+    -fx-background-color: rgba(217, 124, 159, 0);
 }
 #vbox .label {
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #585858;
     -fx-font-weight: bold;
     -fx-font-size: 20px;
 }
 
+#mvListView, #myMusicListView {
+    -fx-border-width: 0px;
+    -fx-font-size: 18px;
+}
+
 .titled-pane {
     -fx-border-width: 0px;
-    -fx-background-color: rgba(240,240,240,0.82);
+    -fx-background-color: rgba(240, 240, 240, 0.29);
 }
 
 .list-view {
-    -fx-background-color: rgb(240, 240, 240);
+    -fx-background-color: rgba(240, 240, 240, 0.13);
     -fx-border-width: 0.5 0.5 0 0 ;
     -fx-border-color: rgba(127,127,127,0.82);;
 }

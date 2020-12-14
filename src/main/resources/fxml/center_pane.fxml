@@ -8,13 +8,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.media.MediaView?>
 
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.effect.BoxBlur?>
 <AnchorPane id="root" prefHeight="400.0" prefWidth="990.0" stylesheets="/css/center_pane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jratil.controller.CenterController">
     <children>
         <!-- 设置高斯模糊背景，两个组件叠加，底层放图片并且模糊，上层放透明颜色背景 -->
         <AnchorPane id="blurPane" minHeight="400" prefWidth="990" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
             <AnchorPane id="blurChild" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
             <effect>
-                <GaussianBlur radius="1000" />
+<!--                <GaussianBlur radius="10000" />-->
+                <BoxBlur width="40" height="40" iterations="3"/>
             </effect>
         </AnchorPane>
         <HBox fx:id="firstBox" prefHeight="400.0" prefWidth="990.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
@@ -25,7 +28,7 @@
                 </VBox>
                 <VBox alignment="CENTER_LEFT" prefHeight="400.0" prefWidth="300.0">
                     <children>
-                        <Label fx:id="lyricLabel" style="-fx-text-fill: #ffffff; -fx-font-size: 25px">
+                        <Label fx:id="lyricLabel" style="-fx-font-style: #ffffff; -fx-font-size: 25px">
                         </Label>
                     </children>
                 </VBox>

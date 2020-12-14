@@ -1,0 +1,4 @@
+#blurPane {
+    -fx-background-image: url("/image/backgroud.png");
+    -fx-background-size: 100%, 100%;
+}
